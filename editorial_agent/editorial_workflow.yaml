@@ -1,0 +1,8 @@
+name: editorial_workflow
+agent_class: SequentialAgent
+description: Orchestrates the editorial process through research, fact-checking,
+  and outlining.
+sub_agents:
+  - config_path: ./researcher.yaml
+  - config_path: ./fact_checker.yaml
+  - config_path: ./outline_editor.yaml

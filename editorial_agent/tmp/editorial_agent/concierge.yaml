@@ -1,0 +1,7 @@
+name: concierge
+model: gemini-2.5-flash
+agent_class: SequentialAgent
+sub_agents:
+  - config_path: ./Researcher_Agent.yaml
+  - config_path: ./Fact-Checker-Agent.yaml
+  - config_path: ./Outline_Editor_agent.yaml
